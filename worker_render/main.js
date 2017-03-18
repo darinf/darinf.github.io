@@ -69,7 +69,7 @@ class CanvasController {
 var worker;
 var canvasController;
 
-function setUp() {
+function start() {
   var canvas = document.getElementById("canvas");
   var context = canvas.getContext("2d");
 
