@@ -1,1 +1,17 @@
 hello world
+
+<button onclick="start()">start</button>
+
+<script>
+  function start() {
+    console.log("start");
+  }
+  
+  function registerSW() {
+    navigator.serviceWorker.register('sw.js').then(function(reg) {
+      console.log("service worker registration succeeded");
+    }).catch(function(error) {
+      console.log("service worker registration failed");
+    });
+  }
+</script>
