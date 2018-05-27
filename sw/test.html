@@ -18,7 +18,7 @@ hello world
   
   function fetchText(url) {
     fetch(url).then(function(response) {
-      return response.string();
+      return response.text();
     }).then(function(myJson) {
       console.log(myJson);
     });
