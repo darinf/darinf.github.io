@@ -15,4 +15,12 @@ hello world
       console.log("service worker registration failed");
     });
   }
+  
+  function fetchText(url) {
+    fetch(url).then(function(response) {
+      return response.string();
+    }).then(function(myJson) {
+      console.log(myJson);
+    });
+  }
 </script>
